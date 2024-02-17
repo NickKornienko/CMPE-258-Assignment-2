@@ -24,6 +24,24 @@ This run is contained within the colab.
 ----------------------------------------------
 Create our own code interpreter:
 
+Used a basic tax function to calculate the final price after tax. The schema and form of the data was similar to the sum example. The use of AI in this problem isn't to the actual calculation but instead to transform the request into a form that the function can use to calculate. 
+
+The prompt was: "Use the `get_tax` function to solve this: Value is 30000 and the sales tax is 9.25" 
+
+The values that need to extracted are the price (30000) and the sales tax (9.25), AI simply interprets this sentance and returns the values. The most important part of this is to configure the function prompt to make sure the AI knows which values to return. 
+
+I ran into issues where the AI wanted to keep trying to do the caluation itself and would return:
+
+{
+  "a": 30000,
+  "b": (30000 * 9.25) / 100
+}
+
+and had to change the prompt to make sure it got the correct values. 
+
+The main value in something like this would be to read through documents have unsolved problems and use the AI to put the problems in formats a program can solve. An example would be reading a math textbook and using a calculator to solve each problem. It could be used to quality control to ensure solutions are correct.
+
+
 
 
 
