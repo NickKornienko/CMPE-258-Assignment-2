@@ -41,6 +41,8 @@ and had to change the prompt to make sure it got the correct values.
 
 The main value in something like this would be to read through documents have unsolved problems and use the AI to put the problems in formats a program can solve. An example would be reading a math textbook and using a calculator to solve each problem. It could be used to quality control to ensure solutions are correct.
 
+----------------------------------------------
+
 
 
 
