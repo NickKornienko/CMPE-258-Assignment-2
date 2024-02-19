@@ -42,6 +42,16 @@ and had to change the prompt to make sure it got the correct values.
 The main value in something like this would be to read through documents have unsolved problems and use the AI to put the problems in formats a program can solve. An example would be reading a math textbook and using a calculator to solve each problem. It could be used to quality control to ensure solutions are correct.
 
 ----------------------------------------------
+Llama:
+
+One of the biggest limitations with running Llama2 is due to memory and storage restrictions in colab it will run out of memory or storage. I was not able to load llama_cpp due to these restrictions, and ran into similar issues with meta's llama models. What I instead chose to use were pipelines to induvidual models. These are much smaller and use fewer resources.
+
+I used "SamLowe/roberta-base-go_emotions" which is a text classifier that does sentiment analysis on text and produces emotion. I ran it on two basic sentances "I am not having a great day" "This assignment is difficult, and things are not working well", and got similar results both classifiying the sentance under dissapointment, sadness, and related emotions.
+
+I ran it on a longer text of an AI-generated announcements of workers being laid off. The model classified the emotion as gratiftude, which indicated that it can handle much longer texts as well.
+
+Something like this is very lightweight, and could be used in companies to scan through meeting transcripts, or chat logs to get a very basic insight into attidudes regarding work. For example if changes are made, and the overall sentiment in company-wide communications tends to be negative, those changes could be reviewed to understand why they lead to the reaction that they have. This could help give managers better insight into employee approval, and help reduce fatigue and turnover.
+
 
 
 
